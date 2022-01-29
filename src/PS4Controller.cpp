@@ -56,14 +56,7 @@ bool PS4Controller::begin(const char* mac) {
 
 void PS4Controller::end() {}
 
-<<<<<<< HEAD
-bool PS4Controller::end() 
-{
-    return false;
-}
-=======
 bool PS4Controller::isConnected() { return ps4IsConnected(); }
->>>>>>> 03f82acd0986de949a00f52421221d709c3c3413
 
 void PS4Controller::setLed(uint8_t r, uint8_t g, uint8_t b) {
   output.r = r;
@@ -123,9 +116,6 @@ void PS4Controller::_connection_callback(void* object, uint8_t isConnected) {
   }
 }
 
-<<<<<<< HEAD
-=======
 #if !defined(NO_GLOBAL_INSTANCES)
 PS4Controller PS4;
 #endif
->>>>>>> 03f82acd0986de949a00f52421221d709c3c3413
